@@ -1,7 +1,7 @@
 # TextBox_Win
 
 ## What is TextBox_Win?
-Display a string/text in a box in Windows (with WinAPI).
+Displays a string/text in a box in Windows (with WinAPI).
 
 ## Linker setup, Libraries (-l):
 * gdi32
