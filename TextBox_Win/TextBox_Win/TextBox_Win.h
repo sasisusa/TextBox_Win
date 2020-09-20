@@ -7,10 +7,9 @@
 #if defined(_WIN32) || defined(_WIN64)
 
 
-#if defined(WINVER) || defined(_WIN32_WINNT)
-	#if (WINVER < _WIN32_WINNT_WINXP) || (_WIN32_WINNT < _WIN32_WINNT_WINXP)
-		#error Windows version to old
-	#endif
+#if (defined(WINVER) && (WINVER < _WIN32_WINNT_WINXP)) || \
+	(defined(_WIN32_WINNT) && (_WIN32_WINNT < _WIN32_WINNT_WINXP))
+#error Windows version to old
 #endif
 
 
