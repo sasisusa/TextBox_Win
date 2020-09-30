@@ -314,6 +314,7 @@ int TextBox(const char *sTitel, const char *sText, int iWidth, int iHeight)
 
 	atomClassID = RegisterClassEx(&wcex);
 	if(!atomClassID){
+		FreeAllocSpace(sPrep);
 		return __LINE__;
 	}
 
